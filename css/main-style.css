@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8em;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  background-color: rebeccapurple;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-weight: 700;
+}
+.container .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .profile .profile-name {
+  padding: 0 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .data {
+  display: flex;
+  text-align: center;
+  padding: 2em 0.5em;
+  justify-content: space-around;
+}
+.container .data-number {
+  display: flex;
+  flex-direction: column;
+}
+.container .data-type {
+  font-size: 0.65em;
+}
+
+.footer {
+  word-spacing: 0.1em;
+  font-size: 0.6em;
+  color: #000;
+  white-space: pre;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer a {
+  color: #001;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}/*# sourceMappingURL=main-style.css.map */
