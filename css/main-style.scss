@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 @import  "variables";
 *{
@@ -10,64 +10,89 @@ html{
     font-size: 62.5%;
 }
 body{
-    // background-color: rebeccapurple; //TO-REMOVE
-    font-size: 1.8em;
+    background-color: $darkCyan;
     font-family: 'Kumbh Sans', sans-serif;
+    color: $veryDarkDesaturatedBlue;
 }
 .container{
-    background-color: rebeccapurple; //TO-REMOVE
-    // position: absolute;
-    width: fit-content;
+    background-color: #fff;
+    max-width: 28em;
+    width: auto;
+    min-width: 13em;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    align-self: center;
-    // align-items: center;
+    margin: auto;
     position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
+    font-weight: 600;
+    border-radius: 1em;
+    font-size: 1em;
 
-    font-weight: 700;
-
+    .card-image{
+        border-radius: 1em 1em 0 0 ;
+        width: 100%;
+        position: relative;
+    }
+    
     .profile{
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        height: 12em;
+        
+        .profile-photo{
+            border-radius: 10em;
+            border: 0.3em solid #fff;
+            position: relative;
+            top: -4.5em;
+            width: 9em;
+        }
         .profile-name{
-            padding: 0 2em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            position: relative;
+            top: -2em;
+        }
+        .age{
+            color: $darkGrayishBlue;
+            font-weight: 400;
+            padding-left: 0.3em;
+        }
+        .city{
+            position: relative;
+            top: -2em;
+            color: $darkGray;
+            font-weight: 400;
+            font-size: 1.2em;
         }
     }
     .data{
         display: flex;
+        width: 100%;
         text-align: center;
         padding: 2em 0.5em;
         justify-content: space-around;
+        align-self: center;
+        border-top: 0.1em solid hsl(0, 0%, 59%, 20%);
         
     }
     .data-number{
         display: flex;
         flex-direction: column;
-        // background-color: aqua; //TO-REMOVE
-
     }
     .data-type{
-        font-size: 0.65em;
+        font-size: 0.85em;
+        letter-spacing: 0.2em;
+        color: $darkGray;
+        font-weight: 400;
+        margin-top: 0.75em;
     }
 }
 
 .footer{
     word-spacing: 0.1em;
-    font-size: 0.6em;
-    color: #000;
+    font-size: 1em;
+    color: $veryDarkDesaturatedBlue;
     white-space: pre;
     display: flex;
     position: absolute;
@@ -77,9 +102,8 @@ body{
     padding-bottom: 1em;
     justify-content: center;
     flex-wrap: wrap;
-    // background-color: rebeccapurple;  //TO-REMOVE
     a{
-        color: #001;
+        color: #fff;
         letter-spacing: 0.1em;
         font-weight: 700;
     }
