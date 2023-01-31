@@ -8,12 +8,18 @@
 }
 html{
     font-size: 62.5%;
+    background-color: $darkCyan;
 }
 body{
-    background-color: $darkCyan;
     font-family: 'Kumbh Sans', sans-serif;
     color: $veryDarkDesaturatedBlue;
+    background: url(../images/bg-comp.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
+
 .container{
     background-color: #fff;
     max-width: 28em;
@@ -35,7 +41,6 @@ body{
         width: 100%;
         position: relative;
     }
-    
     .profile{
         display: flex;
         flex-direction: column;
@@ -75,17 +80,17 @@ body{
         align-self: center;
         border-top: 0.1em solid hsl(0, 0%, 59%, 20%);
         
-    }
-    .data-number{
-        display: flex;
-        flex-direction: column;
-    }
-    .data-type{
-        font-size: 0.85em;
-        letter-spacing: 0.2em;
-        color: $darkGray;
-        font-weight: 400;
-        margin-top: 0.75em;
+        .data-number{
+            display: flex;
+            flex-direction: column;
+        }
+        .data-type{
+            font-size: 0.85em;
+            letter-spacing: 0.2em;
+            color: $darkGray;
+            font-weight: 400;
+            margin-top: 0.75em;
+        }
     }
 }
 

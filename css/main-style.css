@@ -7,12 +7,17 @@
 
 html {
   font-size: 62.5%;
+  background-color: hsl(185deg, 75%, 39%);
 }
 
 body {
-  background-color: hsl(185deg, 75%, 39%);
   font-family: "Kumbh Sans", sans-serif;
   color: hsl(229deg, 23%, 23%);
+  background: url(../images/bg-comp.png) no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .container {
@@ -76,11 +81,11 @@ body {
   align-self: center;
   border-top: 0.1em solid hsla(0deg, 0%, 59%, 0.2);
 }
-.container .data-number {
+.container .data .data-number {
   display: flex;
   flex-direction: column;
 }
-.container .data-type {
+.container .data .data-type {
   font-size: 0.85em;
   letter-spacing: 0.2em;
   color: hsl(0deg, 0%, 59%);
